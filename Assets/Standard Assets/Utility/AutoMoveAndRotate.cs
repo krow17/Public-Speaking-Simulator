@@ -30,6 +30,16 @@ namespace UnityStandardAssets.Utility
             transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
         }
 
+        public void SetMoveSpeed(Vector3 speed)
+        {
+            moveUnitsPerSecond.value = speed;
+        }
+
+        public void SetRotateSpeed(Vector3 speed)
+        {
+            rotateDegreesPerSecond.value = speed;
+        }
+
 
         [Serializable]
         public class Vector3andSpace
